@@ -33,12 +33,14 @@
 requirements.txt    # 项目依赖
 ```
 ### 4.3 Arduino控制程序
-sketch_dec02a/
+```sketch_dec02a/
 └── sketch_dec02a.ino  # Arduino控制程序
+```
 ## 5. 安装部署
 ### 5.1 环境要求
-Python 3.7+
+```Python 3.7+
 Arduino IDE
+```
 现代浏览器（Chrome, Firefox等）
 ### 5.2 依赖安装
 ```pip install flask
@@ -46,16 +48,17 @@ pip install pyserial
 ```
 ### 5.3 硬件连接
 #### LED接线：
-LED正极 → 220Ω电阻 → Arduino 13号引脚
+```LED正极 → 220Ω电阻 → Arduino 13号引脚
 LED负极 → Arduino GND
+```
 #### Arduino连接：
 通过USB线连接Arduino和电脑
 ## 6. 使用说明
 ### 6.1 启动系统
 #### 上传Arduino程序：
-   # 使用Arduino IDE上传led_control.ino到Arduino板
+ ```  # 使用Arduino IDE上传led_control.ino到Arduino板```
 #### 启动后端服务：
-   python app.py
+```   python app.py```
 #### 访问系统：
 打开浏览器访问
 ### 6.2 操作指南
