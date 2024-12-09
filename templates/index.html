@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居管理</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div id="login-screen">
+        <h1>登录</h1>
+        <form id="login-form">
+            <input type="text" placeholder="账号" required>
+            <input type="password" placeholder="密码" required>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+
+    <div id="main-screen" style="display: none;">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#device-management">设备管理</a></li>
+                    <li><a href="#profile">个人中心</a></li>
+                </ul>
+            </nav>
+            <button id="logout-button" class="logout">退出登录</button>
+        </aside>
+        <main>
+            <section id="home" class="hidden">
+                <div class="dashboard">
+                    <div class="date-time">
+                        <h2 id="current-date">2023年10月10日</h2>
+                        <h1 id="current-time">12:00:00</h1>
+                    </div>
+                    <div class="weather">
+                        <!-- 近五天天气情况 -->
+                        <div class="weather-day">...</div>
+                        <!-- 更多天气信息 -->
+                    </div>
+                </div>
+                <div class="room-cards">
+                    <!-- 房间卡片 -->
+                    <div class="room-card">
+                        <h3>客厅</h3>
+                        <div class="controls">
+                            <p>灯光：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>空调：<button id="toggle-button" class="toggle-off">关</button></p>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <h3>卧室1</h3>
+                        <div class="controls">
+                            <p>灯光：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>空调：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>窗帘：<button id="toggle-button" class="toggle-off">关</button></p>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <h3>卧室2</h3>
+                        <div class="controls">
+                            <p>灯光：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>空调：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>窗帘：<button id="toggle-button" class="toggle-off">关</button></p>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <h3>厨房</h3>
+                        <div class="controls">
+                            <p>灯光：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>空调：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>窗帘：<button id="toggle-button" class="toggle-off">关</button></p>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <h3>卫生间</h3>
+                        <div class="controls">
+                            <p>灯光：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>窗帘：<button id="toggle-button" class="toggle-off">关</button></p>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <h3>书房</h3>
+                        <div class="controls">
+                            <p>灯光：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>空调：<button id="toggle-button" class="toggle-off">关</button></p>
+                            <p>窗帘：<button id="toggle-button" class="toggle-off">关</button></p>
+                        </div>
+                    </div>
+                    <!-- 更多房间卡片 -->
+                </div>
+            </section>
+            <section id="device-management" class="hidden">
+                <div class="dashboard">
+                    <div class="date-time">
+                        <h2 id="current-date">2023年10月10日</h2>
+                        <h1 id="current-time">12:00:00</h1>
+                    </div>
+                </div>
+            </section>
+            <section id="profile" class="hidden">
+                    <div class="dashboard">
+                        <div class="user-info">
+                            <img src="static/images/wode-a.png" alt="用户头像" class="avatar">
+                            <div class="vertical-align">
+                                <h2>用户名: 张三</h2>
+                                <p>账户状态: 在线</p>
+                            </div>
+                          
+                            <div class="vertical-align">
+                                <p>邮箱: user@example.com</p>
+                                <button class="btn btn-secondary">修改密码</button>
+                            </div>
+                        </div>
+               
+                        <div class="system-overview">
+                            <h3>系统状态概览</h3>
+                            <p>室内温度: 22°C</p>
+                            <p>室内湿度: 45%</p>
+                            <p>安全状态: 门锁已锁</p>
+                            <p>能源使用: 电力 5kWh, 水 30L</p>
+                        </div>
+                        <div class="scene-modes">
+                            <h3>场景模式</h3>
+                            <button class="mode-button">回家模式</button>
+                            <button class="mode-button">离家模式</button>
+                            <button class="mode-button">睡眠模式</button>
+                            <button class="mode-button">娱乐模式</button>
+                        </div>
+                        <div class="custom-settings">
+                            <h3>个性化设置</h3>
+                            <p>允许用户根据自己的喜好和需求定制界面布局和功能设置。</p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>

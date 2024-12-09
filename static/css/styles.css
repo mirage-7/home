@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+#login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+#login-form input, #login-form button {
+    padding: 1vw;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 0.5vw;
+}
+
+#login-form button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+#main-screen {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    width: 15vw;
+    background-color: #222;
+    padding: 2vw;
+}
+
+nav ul {
+    /* 导航栏按钮列表样式 */
+    list-style: none;
+    /* 导航栏按钮列表无内边距 */
+    padding: 0;
+}
+
+nav ul li a {
+    /* 导航栏按钮字体颜色 */
+    color: #fff;
+    /* 导航栏按钮字体大小 */
+    font-size: 1.5vw;
+    /* 导航栏按钮块级元素 */
+    display: block;
+    /* 导航栏按钮上下间距 */
+    padding: 1vw 0; 
+}
+
+main {
+    flex-grow: 1;
+    padding: 4vw;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+
+.date-time {
+    text-align: center;
+}
+
+.weather {
+    display: flex;
+    gap: 1vw;
+}
+
+.room-cards {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    gap: 2vw;
+}
+
+.room-card {
+    background-color: #4e4e6f;
+    color: #ffffff;
+    border: none;
+    padding: 2vw;
+    border-radius: 1vw;
+    width: calc(25% - 2vw); /* 每行三个卡片，减去间隙 */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a.active {
+    background-color: #161fa0;
+    border-radius: 0.5vw;
+}
+
+.logout {/*退出按钮*/
+    position: absolute;
+    bottom: 2vw;
+    left: 2vw;
+    padding: 1vw;
+    background-color: #2349e0;
+    color: #fff;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.logout:hover {/*退出按钮hover*/
+    background-color: #cc0000;
+}
+
+.hidden {
+    display: none;
+}
+
+#profile .dashboard {/*用户信息卡片*/
+    display: flex;/*卡片布局*/
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;/*卡片内边距*/
+    border-radius: 8px;/*卡片圆角*/
+    color: #ecf0f1;/*卡片字体颜色*/
+}
+
+.user-info, .system-overview, .scene-modes, .custom-settings {
+    flex: 1 1 calc(50% - 20px); /* 每行两个卡片 */
+    padding: 15px;
+    background-color: #34495e; /* 卡片背景颜色 */
+    border-radius: 8px;
+}
+
+
+.user-info {
+    display: flex;/*用户信息布局*/
+    align-items: center;/*用户信息垂直居中*/
+    letter-spacing: 0.2em; /* 增加文字间距 */
+}
+
+.user-info .avatar {
+    width: 80px;/*头像宽度*/
+    height: 80px;/*头像高度*/   
+    border-radius: 50%;/*头像圆角*/
+    margin-right: 20px;/*头像右间距*/
+}
+
+.system-overview, .scene-modes, .custom-settings {
+    margin-bottom: 20px;
+}
+
+.user-info .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.mode-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mode-button:hover {
+    background-color: #0056b3;
+}
+.mode-button.home-mode.active {
+    background-color: #28a745; /* 回家模式激活时的颜色 */
+}
+
+.mode-button.away-mode.active {
+    background-color: #dc3545; /* 离家模式激活时的颜色 */
+}
+.vertical-align {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+#toggle-button.toggle-on {
+    box-shadow: 0 0 10px 2px #00ff00; /* 发光效果 */
+}
