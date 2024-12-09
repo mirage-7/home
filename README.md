@@ -19,6 +19,7 @@
 错误处理和状态恢复
 ## 4. 系统组件
 ### 4.1 前端界面
+
 '''static/
 ├── css/
 │   └── styles.css    # 样式文件
@@ -38,8 +39,8 @@ Python 3.7+
 Arduino IDE
 现代浏览器（Chrome, Firefox等）
 ### 5.2 依赖安装
-pip install flask
-pip install pyserial
+```pip install flask
+pip install pyserial```
 ### 5.3 硬件连接
 #### LED接线：
 LED正极 → 220Ω电阻 → Arduino 13号引脚
