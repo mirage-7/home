@@ -4,7 +4,9 @@
 ## 2. 系统架构
 系统由三个主要部分组成：
 前端界面：基于HTML/CSS/JavaScript的用户交互界面
+
 后端服务：基于Flask的Python服务器
+
 硬件控制：基于Arduino的硬件控制模块
 ### 2.1 技术栈
 前端：HTML5, CSS3, JavaScript
