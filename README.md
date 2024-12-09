@@ -20,16 +20,18 @@
 ## 4. 系统组件
 ### 4.1 前端界面
 
-'''static/
+```static/
 ├── css/
 │   └── styles.css    # 样式文件
 ├── js/
 │   └── scripts.js    # 交互逻辑
 └── templates/
-    └── index.html    # 主页面'''
+    └── index.html    # 主页面
+```
 ### 4.2 后端服务
-'''app.py              # Flask应用主程序
-requirements.txt    # 项目依赖'''
+```app.py              # Flask应用主程序
+requirements.txt    # 项目依赖
+```
 ### 4.3 Arduino控制程序
 sketch_dec02a/
 └── sketch_dec02a.ino  # Arduino控制程序
@@ -40,7 +42,8 @@ Arduino IDE
 现代浏览器（Chrome, Firefox等）
 ### 5.2 依赖安装
 ```pip install flask
-pip install pyserial```
+pip install pyserial
+```
 ### 5.3 硬件连接
 #### LED接线：
 LED正极 → 220Ω电阻 → Arduino 13号引脚
